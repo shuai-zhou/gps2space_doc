@@ -528,7 +528,7 @@ implementing the following steps.</p>
 </div>
 <p>We import our <code class="docutils literal notranslate"><span class="pre">geodf</span></code> module. The <code class="docutils literal notranslate"><span class="pre">geodf</span></code> module has a function <code class="docutils literal notranslate"><span class="pre">df_to_gdf</span></code> which takes three parameters:</p>
 <ul class="simple">
-<li><p>df: This is the your DataFrame</p></li>
+<li><p>df: This is the name of your DataFrame</p></li>
 <li><p>x: This is the column name of your Longitude</p></li>
 <li><p>y: This is the column name of your Latitude</p></li>
 </ul>
@@ -538,7 +538,7 @@ implementing the following steps.</p>
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">gps2space</span> <span class="kn">import</span> <span class="n">geodf</span>
+<span></span><span class="kn">from</span> <span class="nn">gps2space</span> <span class="k">import</span> <span class="n">geodf</span>
 </pre></div>
 </div>
 </div>
@@ -627,7 +627,7 @@ implementing the following steps.</p>
 </table>
 </div></div>
 </div>
-<p>Now the data are in spatial format with a geometry columns that consist the geographical location, we can plot the Point GeoDataFrame on the map of Pennsylvania, USA. Please note the spatial data is in WGS84 datum and is not projected.</p>
+<p>Now the data are in spatial format with a geometry column that stores the geographical location information, we can plot the Point GeoDataFrame on the map of Pennsylvania, USA. Please note the spatial data is in WGS84 datum and is not projected.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>

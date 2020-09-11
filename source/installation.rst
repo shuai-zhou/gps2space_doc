@@ -4,7 +4,11 @@ Installation
 Installing with pip
 -------------------
 
-``GPS2space`` will soon be available in PyPI and can be installed using ``pip install``
+``GPS2space`` can be installed from PyPI using ``pip install``:
+
+.. code-block:: python
+
+	pip install gps2space
 
 Installing from source
 ----------------------

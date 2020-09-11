@@ -140,7 +140,7 @@
    "source": [
     "We import our `geodf` module. The `geodf` module has a function `df_to_gdf` which takes three parameters:\n",
     "\n",
-    "- df: This is the your DataFrame\n",
+    "- df: This is the name of your DataFrame\n",
     "- x: This is the column name of your Longitude\n",
     "- y: This is the column name of your Latitude\n",
     "\n",
@@ -264,7 +264,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Now the data are in spatial format with a geometry columns that consist the geographical location, we can plot the Point GeoDataFrame on the map of Pennsylvania, USA. Please note the spatial data is in WGS84 datum and is not projected."
+    "Now the data are in spatial format with a geometry column that stores the geographical location information, we can plot the Point GeoDataFrame on the map of Pennsylvania, USA. Please note the spatial data is in WGS84 datum and is not projected."
    ]
   },
   {

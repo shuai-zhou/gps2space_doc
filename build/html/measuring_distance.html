@@ -429,7 +429,7 @@ div.rendered_html tbody tr:hover {
 </style>
 <div class="section" id="Measuring-Distance">
 <h1>Measuring Distance<a class="headerlink" href="#Measuring-Distance" title="Permalink to this headline">¶</a></h1>
-<p>In spatial analysis, we often want to know the shortest distance between two features. For example, we may want to know the distance from residence to pharmacy store to see if the distance affect people’s health. Or, we may be interested in whether the distance to airport or highway affect population growth. In this example, we will measure the nearest distance from airport in Pennsylvania, USA.</p>
+<p>In spatial analysis, we often want to know the shortest distance between two features. For example, we may want to know the distance from residence to pharmacy store to see if the distance affects people’s health. Or, we may be interested in whether the distance to airport or highway affects population growth. In this example, we will measure the nearest distance from airport in Pennsylvania, USA.</p>
 <p>As usual, we need to import libraries we will be using.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
@@ -459,7 +459,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">gps2space</span> <span class="kn">import</span> <span class="n">geodf</span>
+<span></span><span class="kn">from</span> <span class="nn">gps2space</span> <span class="k">import</span> <span class="n">geodf</span>
 <span class="n">gdf</span> <span class="o">=</span> <span class="n">geodf</span><span class="o">.</span><span class="n">df_to_gdf</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">)</span>
 <span class="n">gdf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -642,7 +642,7 @@ div.rendered_html tbody tr:hover {
 <img alt="_images/measuring_distance_9_0.png" src="_images/measuring_distance_9_0.png" />
 </div>
 </div>
-<p>The red dots are the footprints of Person 1 (P1) and Person 2 (P2) while the green starts are the airports in Pennsylvania, USA.</p>
+<p>The red dots are the footprints of Person 1 (P1) and Person 2 (P2) while the green stars are the airports in Pennsylvania, USA.</p>
 <p>We can calculate the distance from each point of P1 and P2 to the nearest airport using the <code class="docutils literal notranslate"><span class="pre">dist_to_point</span></code> function in the <code class="docutils literal notranslate"><span class="pre">dist</span></code> module. The <code class="docutils literal notranslate"><span class="pre">dist_to_point</span></code> function takes three parameters:</p>
 <ul class="simple">
 <li><p>gdf_a: This is the GeoDataFrame of P1 and P2’s footprints</p></li>
@@ -675,7 +675,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">gps2space</span> <span class="kn">import</span> <span class="n">dist</span>
+<span></span><span class="kn">from</span> <span class="nn">gps2space</span> <span class="k">import</span> <span class="n">dist</span>
 </pre></div>
 </div>
 </div>

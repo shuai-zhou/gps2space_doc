@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: gps2space
+Version: 0.1.1
+Summary: A Python library for building spatial data and calculating buffer- and Convex hull-based activity space from raw GPS data
+Home-page: https://gps2space.readthedocs.io/en/latest/
+Author: GPS2space
+Author-email: sxz217@psu.edu
+License: MIT
+Description: UNKNOWN
+Keywords: GPS,activity space,buffer,convex hull
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

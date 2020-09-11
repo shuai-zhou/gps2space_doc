@@ -1120,7 +1120,7 @@ the buffer-based activity space measure.</p>
 <h2>Which method to choose<a class="headerlink" href="#Which-method-to-choose" title="Permalink to this headline">¶</a></h2>
 <p>There are pros and cons of the buffer- and convex hull-based measure of activity space. Knowing how they work will help you understand the process and choose the appropriate method.</p>
 <p>The following figure shows the buffer-based activity space (in red color) and convex hull-based activity space (in blue color) from a set of Lat/Long coordinate pairs (in black color). In essence, what buffer-based activity space does is: first, draw a circle around every point use specified buffer distance, then dissolve all the buffers into a single feature to form a Polygon. What convex hull-based activity space does is to line up the outermost points and form the polygon.</p>
-<p><img alt="buffconvex300" src="./_static/buffconvex300.png" /></p>
+<p><img alt="buffconvex300" src="_images/buffconvex300.png" /></p>
 <p>The pro of buffer-based activity space is that it works with even only one point where the activity space is eventually the area of the circle. However, you have to specified the buffer distance which sometimes are arbitrary and vary across disciplines.</p>
 <p>The convex hull-based activity space does not need any arbitrary parameter. However, if there are two or three points that can line up, it is impossible to form a enclosing shape, and the returned activity space will be 0. In addition, if there are extreme points that are beyond the point cluster, the convex hull-based activity space will be inflated.</p>
 <p>The choice of methods depends on which one makes more sense for you research questions and which one is widely acceptable in your field.</p>

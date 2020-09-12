@@ -17,12 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'GPS2space'
+project = 'gps2space'
 copyright = '2020, Shuai Zhou'
 author = 'Shuai Zhou'
-
-# The full version, including alpha/beta/rc tags
-release = '0.1.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -30,8 +27,7 @@ release = '0.1.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['nbsphinx',
-]
+extensions = ['nbsphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -54,16 +50,10 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# -- Change theme ------------------------------------------------------------
+# Change theme
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
-# -- error: contents.rst not found -------------------------------------------
-# If you have this error master file .../.../contents.rst not found
-# Refer to:
-# https://stackoverflow.com/questions/56336234/build-fail-sphinx-error-contents-rst-not-found
-master_doc = 'index'
 
 
 

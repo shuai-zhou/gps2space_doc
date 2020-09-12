@@ -1,12 +1,14 @@
 .. gps2space documentation master file, created by
-   sphinx-quickstart on Sat Sep 12 18:43:13 2020.
+   sphinx-quickstart on Sat Sep 12 19:26:15 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 Welcome to gps2space's documentation!
 =====================================
 
-
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
 
 

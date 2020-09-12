@@ -6,9 +6,7 @@
 Welcome to gps2space's documentation!
 =====================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+
 
 
 

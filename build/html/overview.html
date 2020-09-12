@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; gps2space  documentation</title>
+  <title>Overview &mdash; gps2space  documentation</title>
   
 
   
@@ -35,8 +35,10 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-    <link rel="index" title="Index" href="#" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Building Spatial Data" href="building_spatial_data.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,8 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">User Guide</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="building_spatial_data.html">Building Spatial Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="measuring_activity_space.html">Activity Space</a></li>
 <li class="toctree-l1"><a class="reference internal" href="measuring_activity_space.html#Shared-space">Shared space</a></li>
@@ -151,12 +153,14 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Index</li>
+      <li>Overview</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/overview.ipynb.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -168,11 +172,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
 
-<h1 id="index">Index</h1>
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
 
-<div class="genindex-jumpbox">
- 
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="Overview">
+<h1>Overview<a class="headerlink" href="#Overview" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title fa fa-exclamation-circle">Warning</p>
+<p>An accurate and appropriate GIS database depends on the geographic coordinate system (sometimes is used interchangeably with datum) your are using. For example, in the North America, commonly used datums are NAD37, NAD83, and WGS84. Throughout our package, we are using WGS84 datum because WGS84 is commonly used all over the world and it is the default geographic coordinate system for the Global Positioning System (GPS).</p>
+<p>Although the differences (see discussion <a class="reference external" href="http://webhelp.esri.com/arcgisdesktop/9.3/index.cfm?TopicName=Projection_basics_the_GIS_professional_needs_to_know">here</a> and <a class="reference external" href="https://grindgis.com/blog/wgs84-vs-nad83">here</a>) between those datums are usually not discernible, we recommend you to check what datum you are using with your data vendor for accurate spatial measures. If your datum is not WGS84, please transform it to WGS84 datum before you using this package.</p>
+<p>This package is released under the MIT License, which exempts the authors and copyright holders from any claim, damages or other liability. We will do our best to guarantee the reliability and validity of our package, but users are responsible for their own work. See <a class="reference internal" href="tips.html"><span class="doc">Tips</span></a> for some of our suggestions in using this package to conduct reliable and replicable research.</p>
+</div>
+<p>The following shows the available functions of the package:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">geodf.df_to_gdf</span></code>: This function builds unprojected GeoDataFrame from DataFrame with Lat/Long coordinate pairs</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">space.buffer_space</span></code>: This function calculates buffer-based activity space with user-defined level of aggregation, buffer distance, and projection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">space.convex_space</span></code>: This function calculates convex hull-based activity space with user-defined level of aggregation and projection</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dist.dist_to_point</span></code>: This function calculates nearest Point-Point distance with user-defined projection</p></li>
+</ul>
 </div>
 
 
@@ -180,6 +218,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="building_spatial_data.html" class="btn btn-neutral float-right" title="Building Spatial Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

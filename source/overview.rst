@@ -6,7 +6,7 @@ Overview
 
    Although the differences between those datums are usually not discernible, we recommend you to check what datum you are using with your data vendor for accurate spatial measures. If your datum is not WGS84, please transform it to WGS84 datum before you using this package.
 
-   This package is released under the MIT License, which exempts the authors and copyright holders from any claim, damages or other liability. We will do our best to guarantee the reliability and validity of our package, but users are responsible for their own work. See `Tips <tips>`_ for some of our suggestions in using this package to conduct reliable and replicable research.
+   This package is released under the MIT License, which exempts the authors and copyright holders from any claim, damages or other liability. We will do our best to guarantee the reliability and validity of our package, but users are responsible for their own work. See :ref:`Tips` for some of our suggestions in using this package to conduct reliable and replicable research.
    
 The following shows the available functions of the package:
 

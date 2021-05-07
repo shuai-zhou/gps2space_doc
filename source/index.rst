@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-GPS2space v0.1.1
+GPS2space v0.2.1
 =================
 
 Many data are not readily in spatial format. For example, data from wearable devices, surveys, and social media platforms such as Facebook and Twitter have GPS location information, but usually in raw Lat/Long format. For social scientists who do not have strong background in Geographic Information System (GIS), compiling and analyzing spatial data from the aforementioned sources can be tedious and error-prone. ``GPS2space`` is an open source solution to this issue and can ease the processes of compiling and calculating activity spaces based on raw Lat/Long coordinate pairs.

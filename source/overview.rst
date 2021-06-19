@@ -7,10 +7,11 @@ Overview
    Although the differences between those datums are usually not discernible, we recommend you to check what datum you are using with your data vendor for accurate spatial measures. If your datum is not WGS84, please transform it to WGS84 datum before you using this package.
 
    This package is released under the MIT License, which exempts the authors and copyright holders from any claim, damages or other liability. We will do our best to guarantee the reliability and validity of our package, but users are responsible for their own work. See :ref:`Tips` for some of our suggestions in using this package to conduct reliable and replicable research.
-   
+
 The following shows the available functions of the package:
 
 - ``geodf.df_to_gdf``: This function builds unprojected GeoDataFrame from DataFrame with Lat/Long coordinate pairs
 - ``space.buffer_space``: This function calculates buffer-based activity space with user-defined level of aggregation, buffer distance, and projection
 - ``space.convex_space``: This function calculates convex hull-based activity space with user-defined level of aggregation and projection
 - ``dist.dist_to_point``: This function calculates nearest Point-Point distance with user-defined projection
+- ``dist.dist_to_poly``: This function calculates nearest Point-Polygon distance with user-defined projection and search radius
